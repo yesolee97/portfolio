@@ -87,23 +87,61 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="skill-box">
 						<h6 class="skil-box-tilte">FrontEnd</h6><!-- 이부분 레이아웃 다른 거 참고해서 바꿔야할 듯! 난 풀스텍이 아니니까 ! -->
 						<div>
-							<div class="skill-box-top row">
-								<div class="skill-item col-md-2"><!-- html -->
-									<img src="<?php echo G5_THEME_IMG_URL ?>/html_logo.png" alt="html"> 
+							<div class="skill-box-top row gy-5">
+								<div class="skill-item col-md-12"><!-- html -->
+                                    <!-- 03.08 html progress bar start  -->
+                                    <div class="skill-item-info-box">
+                                        <div class="logo-box">
+                                            <img src="<?php echo G5_THEME_IMG_URL ?>/html_logo.png" alt="html">
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-danger text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            </div>
+                                        </div>
+                                        <div class="counter-box">
+                                            <p class="counter">0%</p>
+                                        </div>
+                                    </div>
+                                    <!-- 03.08 html progress bar end  -->
 								</div>
-								<div class="skill-item col-md-2"><!-- css -->
-									<img src="<?php echo G5_THEME_IMG_URL ?>/css_logo.png" alt="css"> 
+								<div class="skill-item col-md-12"><!-- css -->
+                                    <div class="skill-item-info-box">
+                                        <div class="logo-box">
+                                            <img src="<?php echo G5_THEME_IMG_URL ?>/css_logo.png" alt="css"> 
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar75 text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            </div>
+                                        </div>
+                                        <div class="counter-box">
+                                            <p class="counter">0%</p>
+                                        </div>
+									</div>
 								</div>
-								<div class="skill-item col-md-2"><!-- js -->
-									<img src="<?php echo G5_THEME_IMG_URL ?>/js_logo.png" alt="js"> 
+								<div class="skill-item col-md-12"><!-- js -->
+                                    <div class="skill-item-info-box">
+                                        <div class="logo-box">
+                                            <img src="<?php echo G5_THEME_IMG_URL ?>/js_logo.png" alt="js"> 
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            </div>
+                                        </div>
+                                        <div class="counter-box">
+                                            <p class="counter">0%</p>
+                                        </div>
+									</div>
 								</div>
-								<div class="skill-item col-md-2"><!-- jquery -->
+								<div class="skill-item col-md-12"><!-- jquery -->
 									<img src="<?php echo G5_THEME_IMG_URL ?>/jquery_logo.png" alt="jquery"> 
 								</div>
-								<div class="skill-item col-md-2"><!-- 부트스트랩 -->
+								<div class="skill-item col-md-12"><!-- 부트스트랩 -->
 									<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap"> 
 								</div>
-								<div class="skill-item col-md-2"><!-- 그누보드? -->
+								<div class="skill-item col-md-12"><!-- 그누보드? -->
 									<img src="<?php echo G5_THEME_IMG_URL ?>/React-icon.svg.png" alt="React"> 
 								</div>
 								<!-- <div class="skill-item col-md-2">// 추가할게 뭐가 있남..?
@@ -126,6 +164,36 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 				</div>
 			</div>
         </div>
+        <script>
+            function animateValue(obj, start, end, duration) {
+                let range = end - start;
+                let current = start;
+                let increment = end > start ? 1 : -1;
+                let stepTime = Math.abs(Math.floor(duration / range));
+                let timer = setInterval(function() {
+                    current += increment;
+                    obj.textContent = current + "%";
+                    if (current === end) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            }
+
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('.progress-bar').forEach(function(progressBar) {
+                    progressBar.style.width = '75%';
+                    progressBar.setAttribute('aria-valuenow', 75);
+                    progressBar.textContent = '75%';
+                });
+
+                document.querySelectorAll('.counter').forEach(function(counter) {
+                    animateValue(counter, 0, 75, 2000);
+                });
+            });
+
+        </script>
+
+
         <!-- 메인 스킬 end -->
 
         <!-- 메인 아카이브 start -->

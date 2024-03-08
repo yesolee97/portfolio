@@ -169,8 +169,7 @@
     padding-bottom: 0.7rem;
 }
 .main-skill-box .skill-box .skill-item{
-	border:1px solid #ccc;
-	border-radius:10px;
+
 }
 .main-skill-box .skill-box .skill-item img{
 	max-width:100px;
@@ -287,4 +286,30 @@
     height: 50px;
     background: #fff !important;
     border:0 !important;
+}
+
+.skill-item-info-box {
+    display: flex;
+    flex-wrap:wrap;
+    gap:30px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding: 15px;
+    align-items: center;
+
+}
+
+.progress-box {
+    flex:0 0 70%;
+}
+
+.counter-box p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.counter-box {
+    flex:0 0 15%;
 }
