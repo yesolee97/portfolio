@@ -95,12 +95,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/html_logo.png" alt="html">
                                         </div>
                                         <div class="progress-box">
-                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-danger text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar100 bg-danger text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
-                                            <p class="counter">0%</p>
+                                            <p class="counter100">0%</p>
                                         </div>
                                     </div>
                                     <!-- 03.08 html progress bar end  -->
@@ -111,12 +111,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/css_logo.png" alt="css"> 
                                         </div>
                                         <div class="progress-box">
-                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar progress-bar75 text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar100 text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
-                                            <p class="counter">0%</p>
+                                            <p class="counter100">0%</p>
                                         </div>
 									</div>
 								</div>
@@ -124,6 +124,36 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                     <div class="skill-item-info-box">
                                         <div class="logo-box">
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/js_logo.png" alt="js"> 
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar75 bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            </div>
+                                        </div>
+                                        <div class="counter-box">
+                                            <p class="counter75">0%</p>
+                                        </div>
+									</div>
+								</div>
+								<div class="skill-item col-md-12"><!-- jquery -->
+                                    <div class="skill-item-info-box">
+                                        <div class="logo-box">
+											<img src="<?php echo G5_THEME_IMG_URL ?>/jquery_logo.png" alt="jquery">
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar75 bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            </div>
+                                        </div>
+                                        <div class="counter-box">
+                                            <p class="counter75">0%</p>
+                                        </div>
+									</div>
+								</div>
+								<div class="skill-item col-md-12"><!-- 부트스트랩 -->
+                                    <div class="skill-item-info-box">
+                                        <div class="logo-box">
+											<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap">
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -135,14 +165,20 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
 									</div>
 								</div>
-								<div class="skill-item col-md-12"><!-- jquery -->
-									<img src="<?php echo G5_THEME_IMG_URL ?>/jquery_logo.png" alt="jquery"> 
-								</div>
-								<div class="skill-item col-md-12"><!-- 부트스트랩 -->
-									<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap"> 
-								</div>
-								<div class="skill-item col-md-12"><!-- 그누보드? -->
-									<img src="<?php echo G5_THEME_IMG_URL ?>/React-icon.svg.png" alt="React"> 
+								<div class="skill-item col-md-12"><!-- 리액트 -->
+                                    <div class="skill-item-info-box">
+                                        <div class="logo-box">
+											<img src="<?php echo G5_THEME_IMG_URL ?>/React-icon.svg.png" alt="React">
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            </div>
+                                        </div>
+                                        <div class="counter-box">
+                                            <p class="counter">0%</p>
+                                        </div>
+									</div>
 								</div>
 								<!-- <div class="skill-item col-md-2">// 추가할게 뭐가 있남..?
 									<img src="https://via.placeholder.com/68.jpg" alt="">
@@ -180,13 +216,23 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
             }
 
             document.addEventListener('DOMContentLoaded', (event) => {
-                document.querySelectorAll('.progress-bar').forEach(function(progressBar) {
+				/* progressBar */
+                document.querySelectorAll('.progress-bar100').forEach(function(progressBar) {
+                    progressBar.style.width = '100%';
+                    progressBar.setAttribute('aria-valuenow', 100);
+                    progressBar.textContent = '100%';
+                });
+                document.querySelectorAll('.progress-bar75').forEach(function(progressBar) {
                     progressBar.style.width = '75%';
                     progressBar.setAttribute('aria-valuenow', 75);
                     progressBar.textContent = '75%';
                 });
-
-                document.querySelectorAll('.counter').forEach(function(counter) {
+				
+				/* text */
+                document.querySelectorAll('.counter100').forEach(function(counter) {
+                    animateValue(counter, 0, 100, 2000);
+                });
+                document.querySelectorAll('.counter75').forEach(function(counter) {
                     animateValue(counter, 0, 75, 2000);
                 });
             });
@@ -221,10 +267,10 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                         <div class="notion-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/velog_logo.svg" alt="벨로그 로고">
                             <a href="#none" class="archiving-link">velog.io/@lucas</a>
-                            <p><b>어쩌고저쩌고 벨로그</b>입니다.</p>
+                            <p><b>개인 공부 및 기록을 위한 블로그</b>입니다.</p>
                             <ul>
-                                <li>과거 포트폴리오 작성을 위해 사용했던 경험이 있습니다</li>
-                                <li>블라블라</li>
+                                <li>업무에서 사용한 코드의 어려웠던 부분을 해석, 기록</li>
+                                <li>공부한 내용을 정리해 놓음</li>
                             </ul>
                         </div>
 					</div>
