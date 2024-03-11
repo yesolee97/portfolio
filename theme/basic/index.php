@@ -156,12 +156,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 											<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap">
                                         </div>
                                         <div class="progress-box">
-                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar60 bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
-                                            <p class="counter">0%</p>
+                                            <p class="counter60">0%</p>
                                         </div>
 									</div>
 								</div>
@@ -171,12 +171,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 											<img src="<?php echo G5_THEME_IMG_URL ?>/React-icon.svg.png" alt="React">
                                         </div>
                                         <div class="progress-box">
-                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar30 bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
-                                            <p class="counter">0%</p>
+                                            <p class="counter30">0%</p>
                                         </div>
 									</div>
 								</div>
@@ -227,6 +227,11 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                     progressBar.setAttribute('aria-valuenow', 75);
                     progressBar.textContent = '75%';
                 });
+                document.querySelectorAll('.progress-bar60').forEach(function(progressBar) {
+                    progressBar.style.width = '60%';
+                    progressBar.setAttribute('aria-valuenow', 60);
+                    progressBar.textContent = '60%';
+                });
 				
 				/* text */
                 document.querySelectorAll('.counter100').forEach(function(counter) {
@@ -234,6 +239,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                 });
                 document.querySelectorAll('.counter75').forEach(function(counter) {
                     animateValue(counter, 0, 75, 2000);
+                });
+                document.querySelectorAll('.counter60').forEach(function(counter) {
+                    animateValue(counter, 0, 60, 2000);
+                });
+                document.querySelectorAll('.counter30').forEach(function(counter) {
+                    animateValue(counter, 0, 30, 2000);
                 });
             });
 
