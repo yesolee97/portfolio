@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+.bg-puple{background:#6f42c1;}
 
 /* layout */
 #container {
@@ -142,7 +142,9 @@
     display: inline-block;
     font-size: 2rem;
     padding-bottom: 0.4rem;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #ffc107;
+    font-weight:bold;
+    margin-bottom:1rem;
 }
 
 .main-about-box p {
@@ -265,10 +267,28 @@
 }
 .main-career-box .career-item-lt{
 	padding-right:4rem;
+    border-right:1px solid #ccc;
 }
 .main-career-box .career-item-lt img{
 	border-radius:50%;
 	overflow:hidden;
+}
+.career-item{
+    column-gap:4rem;
+}
+.career-item-title{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.career-item-date{
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+.career-item-txt-box p{
+    font-weight: normal;
+    color: #000000;
+    font-size: 1.2rem;
 }
 
 

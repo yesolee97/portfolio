@@ -96,7 +96,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar100 bg-danger text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar100 bg-danger text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -112,7 +112,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar100 text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar100 bg-primary text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -127,7 +127,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar75 bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar75 bg-warning text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -142,7 +142,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar75 bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar75 bg-info bg-warning text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -156,12 +156,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 											<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap">
                                         </div>
                                         <div class="progress-box">
-                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar60 bg-puple text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
-                                            <p class="counter">0%</p>
+                                            <p class="counter60">0%</p>
                                         </div>
 									</div>
 								</div>
@@ -171,12 +171,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 											<img src="<?php echo G5_THEME_IMG_URL ?>/React-icon.svg.png" alt="React">
                                         </div>
                                         <div class="progress-box">
-                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-warning text-dark" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar30 bg-info text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
-                                            <p class="counter">0%</p>
+                                            <p class="counter30">0%</p>
                                         </div>
 									</div>
 								</div>
@@ -227,6 +227,16 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                     progressBar.setAttribute('aria-valuenow', 75);
                     progressBar.textContent = '75%';
                 });
+                document.querySelectorAll('.progress-bar60').forEach(function(progressBar) {
+                    progressBar.style.width = '60%';
+                    progressBar.setAttribute('aria-valuenow', 60);
+                    progressBar.textContent = '60%';
+                });
+                document.querySelectorAll('.progress-bar30').forEach(function(progressBar) {
+                    progressBar.style.width = '30%';
+                    progressBar.setAttribute('aria-valuenow', 30);
+                    progressBar.textContent = '30%';
+                });
 				
 				/* text */
                 document.querySelectorAll('.counter100').forEach(function(counter) {
@@ -234,6 +244,12 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                 });
                 document.querySelectorAll('.counter75').forEach(function(counter) {
                     animateValue(counter, 0, 75, 2000);
+                });
+                document.querySelectorAll('.counter60').forEach(function(counter) {
+                    animateValue(counter, 0, 60, 2000);
+                });
+                document.querySelectorAll('.counter30').forEach(function(counter) {
+                    animateValue(counter, 0, 30, 2000);
                 });
             });
 
@@ -256,8 +272,8 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                             <a href="#none" class="archiving-link">github.com/lucas0530</a>
                             <p><b>소스 코드 저장소</b>입니다.</p>
                             <ul>
-                                <li>프론트엔드 관련 공부를 하며 설치 및, 깃 사용법을 공부했습니다</li>
-                                <li>리액트로 당근마켓 카피 프로젝트 진행 중 포트폴리오 제작을 위해 작업이 중단되어있는 상태입니다.</li>
+                                <li>프론트엔드 공부를 시작하며 23년 8월 github 첫 설치 및 사용법을 배웠습니다.</li>
+                                <!-- <li>리액트 / 바닐라js 공부내용을 기록하던 중, 포트폴리오 제작 및 기획을 위해 작업이 중단되어있는 상태입니다.</li> -->
                             </ul>
                         </div>
 					</div>
@@ -267,10 +283,10 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                         <div class="notion-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/velog_logo.svg" alt="벨로그 로고">
                             <a href="#none" class="archiving-link">velog.io/@lucas</a>
-                            <p><b>개인 공부 및 기록을 위한 블로그</b>입니다.</p>
+                            <p><b>개인 공부 및 기록</b>을 위한 블로그 입니다.</p>
                             <ul>
-                                <li>업무에서 사용한 코드의 어려웠던 부분을 해석, 기록</li>
-                                <li>공부한 내용을 정리해 놓음</li>
+                                <li>업무에서 사용한 코드의 어려웠던 부분을 해석, 기록해두었습니다.</li>
+                                <li>공부한 내용을 기록, 정리해 두었습니다.</li>
                             </ul>
                         </div>
 					</div>
