@@ -356,7 +356,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 							</script>
 							<div class="project-col-txt-wrap col-xl-6 col-12">
 								<div class="project-col-txt-box mb-3">
-									<p>
+									<p >
 										한국철도공사의 <b>노후화 된 철도운영정보시스템(XROIS)을 전면 고도화 시키는 작업에 참여</b>했습니다.
 									</p>
 									<p>
