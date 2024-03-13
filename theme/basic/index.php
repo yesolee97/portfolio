@@ -96,7 +96,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar100 bg-danger text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar100 html-bg text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -112,7 +112,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar100 bg-primary text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar100 css-bg text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -127,7 +127,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar75 bg-warning text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar75 js-bg text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -142,7 +142,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar75 bg-info bg-warning text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar75 jquery-bg text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
@@ -150,14 +150,14 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                         </div>
 									</div>
 								</div>
-								<div class="skill-item col-md-12"><!-- 부트스트랩 -->
+								<div class="skill-item col-md-12"><!-- bootstrap -->
                                     <div class="skill-item-info-box">
                                         <div class="logo-box">
 											<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap">
                                         </div>
                                         <div class="progress-box">
                                             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar60 bg-puple text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
+                                                <div class="progress-bar60 bootstrap-bg text-white text-center" style="width: 0%; transition: width 2s ease;" aria-valuenow="0">0%</div>
                                             </div>
                                         </div>
                                         <div class="counter-box">
