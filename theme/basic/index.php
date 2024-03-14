@@ -269,7 +269,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="archiving-box col-md-6 col-12">
                         <div class="git-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/github.png" alt="깃허브 로고">
-                            <a href="#none" class="archiving-link">github.com/lucas0530</a>
+                            <a href="#none" class="archiving-link">github.com/yesolee97</a>
                             <p><strong>소스 코드 저장소</strong>입니다.</p>
                             <ul>
                                 <li>프론트엔드 공부를 시작하며 23년 8월 github 첫 설치 및 사용법을 배웠습니다.</li>
@@ -282,7 +282,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="archiving-box col-md-6 col-12">
                         <div class="notion-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/velog_logo.svg" alt="벨로그 로고">
-                            <a href="#none" class="archiving-link">velog.io/@lucas</a>
+                            <a href="#none" class="archiving-link">velog.io/@dpthf9596</a>
                             <p><strong>개인 공부 및 기록</strong>을 위한 블로그 입니다.</p>
                             <ul>
                                 <li>업무에서 사용한 코드의 어려웠던 부분을 해석, 기록해두었습니다.</li>

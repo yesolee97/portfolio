@@ -253,6 +253,9 @@
     color: #6c757d;
     text-align: center;
 }
+.project-col-wr{
+    padding:0 2rem;
+}
 .project-col-slide .swiper-button-next:after, .project-col-slide .swiper-button-prev:after{
 	font-size:25px;
 }
@@ -289,8 +292,8 @@
 	border-radius:50%;
 	overflow:hidden;
 }
-.career-item{
-    column-gap:4rem;
+.main-career-box .career-item-rt {
+    padding-left:2rem;
 }
 .career-item-title{
     font-size: 1.75rem;
@@ -304,7 +307,7 @@
 .career-item-txt-box p{
     font-weight: normal;
     color: #000000;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 
