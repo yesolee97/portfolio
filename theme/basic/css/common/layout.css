@@ -58,7 +58,6 @@
     display: inline-block;
     font-size: 4rem;
     font-weight: bold;
-    border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
 }
 .main-sec-box .main_common_tit h3:after {
@@ -184,11 +183,8 @@
 
 .skil-box-tilte {
     color: #f4623a;
-    border-bottom: 1px solid #ccc;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
-    padding-bottom: 0.7rem;
 }
 .main-skill-box .skill-box .skill-item{
 
@@ -258,7 +254,7 @@
     text-align: center;
 }
 .project-col-slide .swiper-button-next:after, .project-col-slide .swiper-button-prev:after{
-	font-size:35px;
+	font-size:25px;
 }
 
 .project-col-slide img{
