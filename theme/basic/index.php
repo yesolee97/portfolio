@@ -33,7 +33,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 				<!-- <h6>웹 퍼블리셔 이예솔</h6> -->
 				<h6>저는,</h6>
 				<p>
-					4년차 웹 퍼블리셔입니다.<br>
+					4년차 웹 퍼블리셔입니다.123123<br>
 					퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
 					끊임없는 성장과 발전을 추구합니다.
 				</p>
@@ -270,7 +270,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                         <div class="git-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/github.png" alt="깃허브 로고">
                             <a href="#none" class="archiving-link">github.com/lucas0530</a>
-                            <p><b>소스 코드 저장소</b>입니다.</p>
+                            <p><strong>소스 코드 저장소</strong>입니다.</p>
                             <ul>
                                 <li>프론트엔드 공부를 시작하며 23년 8월 github 첫 설치 및 사용법을 배웠습니다.</li>
                                 <!-- <li>리액트 / 바닐라js 공부내용을 기록하던 중, 포트폴리오 제작 및 기획을 위해 작업이 중단되어있는 상태입니다.</li> -->
@@ -283,7 +283,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                         <div class="notion-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/velog_logo.svg" alt="벨로그 로고">
                             <a href="#none" class="archiving-link">velog.io/@lucas</a>
-                            <p><b>개인 공부 및 기록</b>을 위한 블로그 입니다.</p>
+                            <p><strong>개인 공부 및 기록</strong>을 위한 블로그 입니다.</p>
                             <ul>
                                 <li>업무에서 사용한 코드의 어려웠던 부분을 해석, 기록해두었습니다.</li>
                                 <li>공부한 내용을 기록, 정리해 두었습니다.</li>
@@ -318,7 +318,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="project-box">
 						<h5 class="project-title">한국철도공사(XROIS)</h5>
 						<span class="project-date">2023.04 - 2024.04 (사내 퍼블리셔 2人)</span>
-						<div class="project-col-wr row mt-5 gx-5">
+						<div class="project-col-wr row mt-5">
 							<div class="project-col-slide col-xl-6 col-12 swiper project_slide1" id="project_slide1">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -357,19 +357,18 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 							<div class="project-col-txt-wrap col-xl-6 col-12">
 								<div class="project-col-txt-box mb-3">
 									<p >
-										한국철도공사의 <b>노후화 된 철도운영정보시스템(XROIS)을 전면 고도화 시키는 작업에 참여</b>했습니다.
+										한국철도공사의 <strong>노후화 된 철도운영정보시스템(XROIS)을 전면 고도화 시키는 작업에 참여</strong>했습니다.
 									</p>
 									<p>
-										이 프로젝트는 <b>사내 2명의 퍼블리셔와 1명의 외부 퍼블리셔가 약 12개월과 3개월 동안 함께 참여</b>하였습니다.<br>
-										이 기간 동안 프로그래머와 협업하며 <b>반복 작업을 최소화하고 효율적인 작업 방식을 </b> 되었습니다.<br>
-										그 결과, 유틸리티 클래스 방식으로 개발을 진행하게 되었고, <b>코드의 재사용성과 유지보수성을 높이는데 초점</b>을 맞추었습니다.
+										이 프로젝트는 <strong>사내 2명의 퍼블리셔와 1명의 외부 퍼블리셔가 약 12개월과 3개월 동안 함께 참여</strong>하였습니다.<br>
+										이 기간 동안 프로그래머와 협업하며 <strong>반복 작업을 최소화하고 효율적인 작업 방식을 </strong> 되었습니다.<br>
+										그 결과, 유틸리티 클래스 방식으로 개발을 진행하게 되었고, <strong>코드의 재사용성과 유지보수성을 높이는데 초점</strong>을 맞추었습니다.
 									</p>
 									<p>
-										기존의 사용자 경험이 반영되지 못한 디자인을 개선하여 사용자 친화적인 UI/UX 디자인을 구현하였으며,<br>
-										샘플 페이지 코딩, 검수, 시스템별 화면 설계, 페이지 개발 등을 추진하였습니다.
+										기존의 사용자 경험이 반영되지 못한 디자인을 개선하여 사용자 친화적인 UI/UX 디자인을 구현하였으며, 샘플 페이지 코딩, 검수, 시스템별 화면 설계, 페이지 개발 등을 추진하였습니다.
 									</p>
 									<p>
-										이 프로젝트를 통해 UI/UX 플랫폼인 <b>SOFTBOWL - SBUx</b>와 웹 DataGrid UI 라이브러리인 <b>RealGrid</b>를 활용한 실무 경험을 쌓을 수 있었습니다.
+										이 프로젝트를 통해 UI/UX 플랫폼인 <strong>SOFTBOWL - SBUx</strong>와 웹 DataGrid UI 라이브러리인 <strong>RealGrid</strong>를 활용한 실무 경험을 쌓을 수 있었습니다.
 									</p>
 								</div>
 								<div class="">
@@ -392,7 +391,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="project-box mt-5">
 						<h5 class="project-title">2021년 행정안전부 업무보고</h5>
 						<span class="project-date">2021.03 ~ 2021.03</span>
-						<div class="project-col-wr row mt-5 gx-5">
+						<div class="project-col-wr row mt-5">
 							<div class="project-col-slide col-xl-6 col-12 swiper project_slide2" id="project_slide2">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -428,10 +427,10 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 							<div class="project-col-txt-wrap col-xl-6 col-12">
 								<div class="project-col-txt-box mb-3">
 									<p>
-										회사에 입사한 뒤 진행한 첫 프로젝트 였으며,<br> Inclunde 시킨 Header, Footer를 제외한 <b>Main 페이지를 맡아 제작</b> 진행하였습니다.
+										회사에 입사한 뒤 진행한 첫 프로젝트 였으며,<br> Inclunde 시킨 Header, Footer를 제외한 <strong>Main 페이지를 맡아 제작</strong> 진행하였습니다.
 									</p>
 									<p>
-										입사 후 처음 투입된 프로젝트였기 때문에 회사에서 제게 거는 기대는 매우 적었으나,<br> 메인 페이지의 작업의 시작과 끝을 모두 혼자 마무리 짓는 모습, 반응형 작업까지 막힘없이 진행하는 모습을 통해 이후 프로젝트부터 <b>바로 투입할 수 있는 인재로 인정</b>받을 수 있었습니다.
+										입사 후 처음 투입된 프로젝트였기 때문에 회사에서 제게 거는 기대는 매우 적었으나,<br> 메인 페이지의 작업의 시작과 끝을 모두 혼자 마무리 짓는 모습, 반응형 작업까지 막힘없이 진행하는 모습을 통해 이후 프로젝트부터 <strong>바로 투입할 수 있는 인재로 인정</strong>받을 수 있었습니다.
 									</p>
 								</div>
 								<div class="">
@@ -454,7 +453,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="project-box mt-5">
 						<h5 class="project-title">소비자보호관리포털(한국신용정보원)</h5>
 						<span class="project-date">2021.10 ~ 2021.11</span>
-						<div class="project-col-wr row mt-5 gx-5">
+						<div class="project-col-wr row mt-5">
 							<div class="project-col-slide col-xl-6 col-12 swiper project_slide3" id="project_slide3">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -490,17 +489,17 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 							<div class="project-col-txt-wrap col-xl-6 col-12">
 								<div class="project-col-txt-box mb-3">
 									<p>
-										<b>한국신용정보원의 관리자 페이지</b>로, 마감 기한이 촉박한 상태에서 약 1000장 가량의 페이지를 작업해야 하는 상황에 투입되었습니다.
+										<strong>한국신용정보원의 관리자 페이지</strong>로, 마감 기한이 촉박한 상태에서 약 1000장 가량의 페이지를 작업해야 하는 상황에 투입되었습니다.
 									</p>
 									<p>
 										컨펌 완료된 디자인 시안이 있는 상태였으며,<br>
 										컴포넌트화 되어있는 소스들을 부분부분 가져다 붙여넣는 방식으로 개발을 진행해 타이트한 마감 기한 내에 작업을 완료할 수 있었습니다.
 									</p>
 									<p>
-										해당 프로젝트를 진행하며 인원 수에 맞춰 파트를 배분하는 작업을 통해 <b>업무 효율성을 극대화</b> 시킬 수 있었고, 시간 내에 맡은 분량을 쳐내야 한다는 <b>부담감도 있었지만, 그 부담감과 함께 책임감을 배워가며 성장</b>할 수 있었습니다.
+										해당 프로젝트를 진행하며 인원 수에 맞춰 파트를 배분하는 작업을 통해 <strong>업무 효율성을 극대화</strong> 시킬 수 있었고, 시간 내에 맡은 분량을 쳐내야 한다는 <strong>부담감도 있었지만, 그 부담감과 함께 책임감을 배워가며 성장</strong>할 수 있었습니다.
 									</p>
 									<p>
-										각자 맡은 파트의 작업 속도 및 보다 빠르게 작업할 수 있는 <b>방법들을 공유하며 팀워크를 보다 공고하게 다질 수 있는 계기</b>가 되었습니다.
+										각자 맡은 파트의 작업 속도 및 보다 빠르게 작업할 수 있는 <strong>방법들을 공유하며 팀워크를 보다 공고하게 다질 수 있는 계기</strong>가 되었습니다.
 									</p>
 								</div>
 								<div class="">
@@ -523,7 +522,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="project-box mt-5">
 						<h5 class="project-title">대전유성구체육회</h5>
 						<span class="project-date">2021.07 ~ 2021.09</span>
-						<div class="project-col-wr row mt-5 gx-5">
+						<div class="project-col-wr row mt-5">
 							<div class="project-col-slide col-xl-6 col-12 swiper project_slide4" id="project_slide4">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -562,7 +561,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 										대전광역시 유성구체육회 반응형 홈페이지 리뉴얼 작업을 진행하였습니다.
 									</p>
 									<p>
-										 기존 그누보드로 홈페이지 제작 후 사용했던 자료가 남아있어, <b>그누보드로 자료 / 호스팅 이전 및 리뉴얼 작업을 진행</b>했습니다.<br />
+										 기존 그누보드로 홈페이지 제작 후 사용했던 자료가 남아있어, <strong>그누보드로 자료 / 호스팅 이전 및 리뉴얼 작업을 진행</strong>했습니다.<br />
 										 업체측의 요청을 반영하여 기존 페이지는 관리자 페이지의 내용관리를 통해 작업이 이루어졌습니다.
 									</p>
 									<p>
@@ -593,7 +592,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="project-box mt-5">
 						<h5 class="project-title">대덕구 체육회</h5>
 						<span class="project-date">2022.01 ~ 2022.04</span>
-						<div class="project-col-wr row mt-5 gx-5">
+						<div class="project-col-wr row mt-5">
 							<div class="project-col-slide col-xl-6 col-12 swiper project_slide5" id="project_slide5">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -661,7 +660,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="project-box mt-5">
 						<h5 class="project-title">청주시립요양병원</h5>
 						<span class="project-date">2022.04 ~ 2022.06</span>
-						<div class="project-col-wr row mt-5 gx-5">
+						<div class="project-col-wr row mt-5">
 							<div class="project-col-slide col-xl-6 col-12 swiper project_slide6" id="project_slide6">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
