@@ -33,7 +33,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 				<!-- <h6>웹 퍼블리셔 이예솔</h6> -->
 				<h6>저는,</h6>
 				<p>
-					4년차 웹 퍼블리셔입니다.123123<br>
+					4년차 웹 퍼블리셔입니다.<br>
 					퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
 					끊임없는 성장과 발전을 추구합니다.
 				</p>
