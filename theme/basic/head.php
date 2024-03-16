@@ -28,16 +28,19 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <a class="navbar-brand" href="<?php echo G5_URL ?>">Yesols Portfolio</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Skill</a>
+                        <a class="nav-link" href="#skill">Skill</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Archiving</a>
+                        <a class="nav-link" href="#archiving">Archiving</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>

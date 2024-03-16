@@ -43,7 +43,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
         <!-- 메인 스크롤 박스 end -->
 
         <!-- 메인 자기소개 start -->
-        <div class="main-about-box main-sec-box">
+        <div class="main-about-box main-sec-box" id="about">
             <div class="content-wrap">
                 <div class="container-fluid">
                     <div class="main_common_tit">
@@ -78,7 +78,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
         <!-- 메인 자기소개 end -->
 
         <!-- 메인 스킬 start -->
-        <div class="main-skill-box main-sec-box">
+        <div class="main-skill-box main-sec-box" id="skill">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3>Skill</h3>
@@ -254,12 +254,10 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
             });
 
         </script>
-
-
         <!-- 메인 스킬 end -->
 
         <!-- 메인 아카이브 start -->
-        <div class="main-archiving-box main-sec-box">
+        <div class="main-archiving-box main-sec-box" id="archiving">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3 class="txt_wt">Archiving</h3>
@@ -269,7 +267,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="archiving-box col-md-6 col-12">
                         <div class="git-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/github.png" alt="깃허브 로고">
-                            <a href="#none" class="archiving-link">github.com/yesolee97</a>
+                            <a href="https://github.com/yesolee97" class="archiving-link" target="_blank">github.com/yesolee97</a>
                             <p><strong>소스 코드 저장소</strong>입니다.</p>
                             <ul>
                                 <li>프론트엔드 공부를 시작하며 23년 8월 github 첫 설치 및 사용법을 배웠습니다.</li>
@@ -282,7 +280,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="archiving-box col-md-6 col-12">
                         <div class="notion-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/velog_logo.svg" alt="벨로그 로고">
-                            <a href="#none" class="archiving-link">velog.io/@dpthf9596</a>
+                            <a href="https://velog.io/@dpthf9596" class="archiving-link" target="_blank">velog.io/@dpthf9596</a>
                             <p><strong>개인 공부 및 기록</strong>을 위한 블로그 입니다.</p>
                             <ul>
                                 <li>업무에서 사용한 코드의 어려웠던 부분을 해석, 기록해두었습니다.</li>
@@ -309,7 +307,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
         <!-- 메인 아카이브 end -->
 
         <!-- 메인 프로젝트 start -->
-        <div class="main-project-box main-sec-box">
+        <div class="main-project-box main-sec-box" id="project">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3 class="txt_wt">Project</h3>
@@ -732,7 +730,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 
 
         <!-- 메인 커리어 start -->
-        <div class="main-career-box main-sec-box">
+        <div class="main-career-box main-sec-box" id="career">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3>Career</h3>
@@ -763,13 +761,13 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
         <!-- 메인 커리어 end -->
 
         <!-- 메인 컨텍 start -->
-        <div class="main-contect-box main-sec-box">
+        <div class="main-contact-box main-sec-box" id="contact">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3 class="txt_wt">Contact</h3>
 				</div>
                 <div class="content-body">
-                    <form id="contactForm" accept-charset="UTF-8" enctype="multipart/form-data" method="post" action="" >
+                    <form id="contactForm" accept-charset="UTF-8" enctype="multipart/form-data" method="post" action="./save_request.php" >
                         <input type="hidden" name="cotact_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
                         <div class="row gy-4">
                             <div class="col-xl-6 col-12">
