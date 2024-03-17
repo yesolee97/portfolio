@@ -85,7 +85,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 				</div>
 				<div class="skill-content">
 					<div class="skill-box">
-						<h6 class="skil-box-tilte">FrontEnd</h6><!-- 이부분 레이아웃 다른 거 참고해서 바꿔야할 듯! 난 풀스텍이 아니니까 ! -->
+						<h6 class="skil-box-tilte">FrontEnd</h6>
 						<div>
 							<div class="skill-box-top row gy-5">
 								<div class="skill-item col-md-12"><!-- html -->
