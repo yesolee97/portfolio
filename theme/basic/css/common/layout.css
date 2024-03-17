@@ -22,6 +22,14 @@
     color: #333;
 }
 
+nav.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:#fff;
+    z-index:999;
+}
 #navbarNav {
     max-width: 1000px;
 }
@@ -273,6 +281,10 @@
 }
 .project-col-txt-box {
     border-bottom: 1px solid #ccc;
+}
+
+.project-col-txt-box p{
+    word-break:keep-all;
 }
 
 .project-stack span {

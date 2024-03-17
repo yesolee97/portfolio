@@ -359,7 +359,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</p>
 									<p>
 										이 프로젝트는 <strong>사내 2명의 퍼블리셔와 1명의 외부 퍼블리셔가 약 12개월과 3개월 동안 함께 참여</strong>하였습니다.<br>
-										이 기간 동안 프로그래머와 협업하며 <strong>반복 작업을 최소화하고 효율적인 작업 방식을 </strong> 되었습니다.<br>
+										이 기간 동안 프로그래머와 협업하며 <strong>반복 작업을 최소화하고 효율적인 작업 방식을 모색</strong>하게 되었습니다.<br>
 										그 결과, 유틸리티 클래스 방식으로 개발을 진행하게 되었고, <strong>코드의 재사용성과 유지보수성을 높이는데 초점</strong>을 맞추었습니다.
 									</p>
 									<p>
