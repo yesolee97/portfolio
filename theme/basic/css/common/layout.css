@@ -279,6 +279,9 @@ nav.navbar{
 	object-fit:contain;
 	max-height:450px;
 }
+.project-col-txt-wrap{
+    padding-left:50px;
+}
 .project-col-txt-box {
     border-bottom: 1px solid #ccc;
 }
