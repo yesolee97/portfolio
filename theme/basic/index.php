@@ -22,6 +22,21 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 
 <!-- main start -->
     <div class="main-wrap">
+		<!-- 240319 - 스크롤매직 참고 소스 
+			<div class="wrap"> 
+			<div class="header">
+				<h1>ScrollMagic</h1>
+				<p>스크롤매직 라이브러리 포스팅 예제입니다.<br/>스크롤매직 공식사이트 예제 라이브러리 : <a href="http://scrollmagic.io/examples/" target="_blank">http://scrollmagic.io/</a></p>
+			</div>
+			<div class="container">
+				<h2>Let's start showing off some magic...</h2>
+				<p class="h2_text">Please note: Most of the examples are not optimized for mobile devices,<br> so the sourcecode can be as simple as possible. The obvious exceptions are the examples on mobile support.</p>
+				<div class="spacer"></div>
+				<div class="trigger" id="trigger1">Trigger 1</div>
+				<div id="animate" class="icon-round">ScrollMagic</div>
+				<div class="space"></div>
+			</div>
+		</div>-->
         <!-- 메인 스크롤 박스 start -->
         <div class="main-scroll-box main-sec-box" id="scroll">
 			<div class="scroll_box">↓ 스크롤 해주세요!</div>
@@ -39,6 +54,17 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 				</p>
 				<a href="#"><span>제가 궁금하신가요?</span></a>
 			</div>
+			<script>
+				var controller = new ScrollMagic.Controller();
+				// Create a scene
+				var scene = new ScrollMagic.Scene({
+					triggerElement: '.main-scroll-box', // Trigger when .main-scroll-box enters the viewport
+					triggerHook: 0.9, // Trigger at 90% of the viewport
+					duration: 500 // Animation duration
+				})
+				.setClassToggle('.main-scroll-box', 'fade-in') // Add class 'fade-in' to .main-scroll-box when scrolled into view
+				.addTo(controller);
+			</script>
         </div>
         <!-- 메인 스크롤 박스 end -->
 

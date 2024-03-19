@@ -381,3 +381,77 @@ nav.navbar{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 240319 - 스크롤매직 참고 소스
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -.5px;
+  }
+  
+  .header {
+    padding: 80px 50px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+  }
+  .header h1 {
+    font-size: 65px;
+  }
+  .header p {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 160%;
+  }
+  
+  .container {
+    margin-top: 40px;
+    padding: 0 50px;
+  }
+  .container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing:-1px;
+  }
+  .container .h2_text {
+    margin-bottom: 10px;
+    padding-bottom: 80px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .container .icon-round {
+    width: 150px;
+    height: 150px;
+    margin: 120px 0;
+    color: #fff;
+    font-size: 22px;
+    line-height: 150px;
+    text-align: center;
+    background-color: #ccc6db;
+    border-radius: 100%;
+  }
+  
+  .trigger {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #6332F6;
+    background-color: #eee;
+  }*/
