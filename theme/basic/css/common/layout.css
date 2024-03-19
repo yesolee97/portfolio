@@ -361,7 +361,13 @@ nav.navbar{
 .progress-box {
     flex:0 0 70%;
 }
-
+.progress-box .progress{
+    height:25px;
+}
+.progress-box .progress > div{
+    height:25px;
+    line-height:25px;
+}
 .counter-box p {
     text-align: center;
     margin-bottom: 0;

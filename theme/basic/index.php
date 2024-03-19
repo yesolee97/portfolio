@@ -23,7 +23,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 <!-- main start -->
     <div class="main-wrap">
         <!-- 메인 스크롤 박스 start -->
-        <div class="main-scroll-box main-sec-box">
+        <div class="main-scroll-box main-sec-box" id="scroll">
 			<div class="scroll_box">↓ 스크롤 해주세요!</div>
 			<div class="txt_box">
 				<h6>안녕하세요!</h6>
@@ -90,7 +90,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 							<div class="skill-box-top row gy-5">
 								<div class="skill-item col-md-12"><!-- html -->
                                     <!-- 03.08 html progress bar start  -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/html_logo.png" alt="html">
                                         </div>
@@ -106,7 +106,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                     <!-- 03.08 html progress bar end  -->
 								</div>
 								<div class="skill-item col-md-12"><!-- css -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/css_logo.png" alt="css"> 
                                         </div>
@@ -121,7 +121,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- js -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/js_logo.png" alt="js"> 
                                         </div>
@@ -136,7 +136,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- jquery -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
 											<img src="<?php echo G5_THEME_IMG_URL ?>/jquery_logo.png" alt="jquery">
                                         </div>
@@ -151,7 +151,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- bootstrap -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
 											<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap">
                                         </div>
@@ -166,7 +166,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- 리액트 -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
 											<img src="<?php echo G5_THEME_IMG_URL ?>/React-icon.svg.png" alt="React">
                                         </div>
