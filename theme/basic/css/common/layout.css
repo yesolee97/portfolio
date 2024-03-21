@@ -367,6 +367,9 @@ nav.navbar{
     color:#fff;
     font-weight:500;
 }
+.main-contact-box .form-control:focus{
+    background:#fff;
+}
 
 .progress-box {
     flex:0 0 70%;
