@@ -357,6 +357,16 @@ nav.navbar{
     align-items: center;
 
 }
+.main-contact-box .form-control{
+    background:transparent;
+    border:none;
+    border-bottom:2px solid #fff;
+    transition:background 0.3s;
+}
+.main-contact-box .form-control + label{
+    color:#fff;
+    font-weight:500;
+}
 
 .progress-box {
     flex:0 0 70%;
