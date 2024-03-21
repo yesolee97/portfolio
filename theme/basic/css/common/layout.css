@@ -342,9 +342,11 @@ nav.navbar{
 
 .main-contact-box button {
     width:120px;
-    height: 50px;
+    height: 40px;
     background: #fff !important;
     border:0 !important;
+    font-weight: 500;
+    font-size:13px;
 }
 
 .skill-item-info-box {
@@ -361,7 +363,8 @@ nav.navbar{
     background:transparent;
     border:none;
     border-bottom:2px solid #fff;
-    transition:background 0.3s;
+    color:#fff;
+    transition:0.3s ease-in-out;
 }
 .main-contact-box .form-control + label{
     color:#fff;
@@ -371,6 +374,20 @@ nav.navbar{
     background:#fff;
     border-radius:5px !important;
     border-color:#ccc;
+    color: #333;
+}
+
+.form-floating>.form-control:focus:not(:placeholder-shown)~label{
+    color:#333;
+    top:0;
+}
+.form-floating>.form-control:not(:placeholder-shown)~label{
+    color:#fff;
+    top:-10px;
+}
+.form-floating>.form-control:not(:placeholder-shown)~label::after{
+    content: '';
+    display: none;
 }
 
 .progress-box {
