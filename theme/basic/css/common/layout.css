@@ -369,6 +369,8 @@ nav.navbar{
 }
 .main-contact-box .form-control:focus{
     background:#fff;
+    border-radius:5px !important;
+    border-color:#ccc;
 }
 
 .progress-box {
