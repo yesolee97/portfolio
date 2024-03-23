@@ -55,14 +55,23 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 				<a href="#"><span>제가 궁금하신가요?</span></a>
 			</div>
 			<script>
+				// Initialize ScrollMagic controller
 				var controller = new ScrollMagic.Controller();
-				// Create a scene
+
+				// Create a TweenMax animation
+				var tween = TweenMax.from("#scroll h1", 1, {
+				opacity: 0,
+				y: 100,
+				ease: Power1.easeInOut
+				});
+
+				// Create a ScrollMagic scene
 				var scene = new ScrollMagic.Scene({
-					triggerElement: '.main-scroll-box', // Trigger when .main-scroll-box enters the viewport
-					triggerHook: 0.9, // Trigger at 90% of the viewport
-					duration: 500 // Animation duration
+				triggerElement: "#scroll",
+				triggerHook: 0.8, // Adjust as needed
+				reverse: false // Change to true if you want the animation to reverse on scroll up
 				})
-				.setClassToggle('.main-scroll-box', 'fade-in') // Add class 'fade-in' to .main-scroll-box when scrolled into view
+				.setTween(tween)
 				.addTo(controller);
 			</script>
         </div>
