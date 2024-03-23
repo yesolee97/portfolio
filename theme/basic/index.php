@@ -19,30 +19,16 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 
 
 <!-- 24.2.13 (화) main-skill Ui 수정, main-contact form code 추가 -->
-<h1>push test</h1>
 <!-- main start -->
     <div class="main-wrap">
-		<!-- 240319 - 스크롤매직 참고 소스 
-			<div class="wrap"> 
-			<div class="header">
-				<h1>ScrollMagic</h1>
-				<p>스크롤매직 라이브러리 포스팅 예제입니다.<br/>스크롤매직 공식사이트 예제 라이브러리 : <a href="http://scrollmagic.io/examples/" target="_blank">http://scrollmagic.io/</a></p>
-			</div>
-			<div class="container">
-				<h2>Let's start showing off some magic...</h2>
-				<p class="h2_text">Please note: Most of the examples are not optimized for mobile devices,<br> so the sourcecode can be as simple as possible. The obvious exceptions are the examples on mobile support.</p>
-				<div class="spacer"></div>
-				<div class="trigger" id="trigger1">Trigger 1</div>
-				<div id="animate" class="icon-round">ScrollMagic</div>
-				<div class="space"></div>
-			</div>
-		</div>-->
         <!-- 메인 스크롤 박스 start -->
         <div class="main-scroll-box main-sec-box" id="scroll">
 			<div class="scroll_box">↓ 스크롤 해주세요!</div>
 			<div class="txt_box">
-				<h6>안녕하세요!</h6>
-				<p>웹 퍼블리셔 이예솔입니다.</p>
+                <div class="txt_box_inner">
+                    <h6>안녕하세요!</h6>
+                    <p>웹 퍼블리셔 이예솔입니다.</p>
+                </div>
 			</div>
 			<div class="txt_box2">
 				<!-- <h6>웹 퍼블리셔 이예솔</h6> -->
@@ -59,20 +45,19 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 				var controller = new ScrollMagic.Controller();
 
 				// Create a TweenMax animation
-				var tween = TweenMax.from("#scroll h1", 1, {
-				opacity: 0,
-				y: 100,
-				ease: Power1.easeInOut
-				});
+				var tween = TweenMax.to("#scroll .txt_box h6", 1, {
+                    scale: 1.1,
+                    ease: Power1.easeInOut
+                });
 
-				// Create a ScrollMagic scene
-				var scene = new ScrollMagic.Scene({
-				triggerElement: "#scroll",
-				triggerHook: 0.8, // Adjust as needed
-				reverse: false // Change to true if you want the animation to reverse on scroll up
-				})
-				.setTween(tween)
-				.addTo(controller);
+                // Create a ScrollMagic scene
+                var scene = new ScrollMagic.Scene({
+                    triggerElement: "scroll .txt_box",
+                    reverse: true,  // Change to true if you want the animation to reverse on scroll up
+                    triggerHook: 0.9 // 스크롤 위치가 컨테이너의 중간에 도달했을 때 트리거
+                })
+                .setTween(tween)
+                .addTo(controller);
 			</script>
         </div>
         <!-- 메인 스크롤 박스 end -->

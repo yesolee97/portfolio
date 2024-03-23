@@ -11,6 +11,7 @@
     float: none !important;
     width: 100% !important;
     margin: 0 !important;
+    overflow: hidden;
 }
 
 #hd_pop, #hd_wrapper, #tnb .inner, #gnb .gnb_wrap, #container_wr, #ft_wr {
@@ -89,14 +90,14 @@ nav.navbar{
 
 /* scroll */
 .main-scroll-box {
-    height: 100vh;
     text-align: center;
     background: #000;
+    height:4000px;
 }
 
 .main-scroll-box .scroll_box {
     position: absolute;
-    top: 20px;
+    top: 160px;
     left: 50%;
     color: #fff;
     animation-direction: normal;
@@ -117,7 +118,12 @@ nav.navbar{
         transform: translate(-50%, 0)
     }
 }
-
+.main-scroll-box .txt_box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .main-scroll-box .txt_box h6{
 	font-size:8rem;
 	margin-bottom:1rem;
@@ -376,7 +382,6 @@ nav.navbar{
     border-color:#ccc;
     color: #333;
 }
-
 .form-floating>.form-control:focus:not(:placeholder-shown)~label{
     color:#333;
     top:0;
