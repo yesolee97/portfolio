@@ -4,13 +4,14 @@
 .js-bg{background:#ffdf00;}
 .jquery-bg{background:#0868ab;}
 .bootstrap-bg{background:#6f42c1;}
-
+#triger{position:fixed; top:140px; right:0; z-index:999; color:#fff; font-size:12px;}
 
 /* layout */
 #container {
     float: none !important;
     width: 100% !important;
     margin: 0 !important;
+    overflow: hidden;
 }
 
 #hd_pop, #hd_wrapper, #tnb .inner, #gnb .gnb_wrap, #container_wr, #ft_wr {
@@ -22,6 +23,14 @@
     color: #333;
 }
 
+nav.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:#fff;
+    z-index:999;
+}
 #navbarNav {
     max-width: 1000px;
 }
@@ -81,14 +90,14 @@
 
 /* scroll */
 .main-scroll-box {
-    height: 100vh;
     text-align: center;
     background: #000;
+    /*height:4000px; */
 }
 
 .main-scroll-box .scroll_box {
     position: absolute;
-    top: 20px;
+    top: 160px;
     left: 50%;
     color: #fff;
     animation-direction: normal;
@@ -109,7 +118,12 @@
         transform: translate(-50%, 0)
     }
 }
-
+.main-scroll-box .txt_box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .main-scroll-box .txt_box h6{
 	font-size:8rem;
 	margin-bottom:1rem;
@@ -155,6 +169,21 @@
 	transition:color 350ms ease-in-out;
 }
 
+
+.main-scroll-box .txt_box3{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main-scroll-box .txt_box4{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /* about */
 .main-about-box h6 {
@@ -202,6 +231,7 @@
     background: #f5f5f5;
     border-radius: 1rem;
     padding: 2rem;
+    min-height:273px;
 }
 
 .archiving-box > div img {
@@ -258,6 +288,10 @@
 }
 .project-col-slide .swiper-button-next:after, .project-col-slide .swiper-button-prev:after{
 	font-size:25px;
+    color:#ccc;
+}
+.project-col-slide .swiper-pagination-bullet-active{
+    background:#212529;    
 }
 
 .project-col-slide img{
@@ -266,8 +300,15 @@
 	object-fit:contain;
 	max-height:450px;
 }
+.project-col-txt-wrap{
+    padding-left:50px;
+}
 .project-col-txt-box {
     border-bottom: 1px solid #ccc;
+}
+
+.project-col-txt-box p{
+    word-break:keep-all;
 }
 
 .project-stack span {
@@ -311,20 +352,22 @@
 }
 
 
-.main-contect-box {
+.main-contact-box {
     background: #712cf9
 }
 
-.main-contect-box textarea {
+.main-contact-box textarea {
     min-height: 200px !important;
     resize: none;
 }
 
-.main-contect-box button {
+.main-contact-box button {
     width:120px;
-    height: 50px;
+    height: 40px;
     background: #fff !important;
     border:0 !important;
+    font-weight: 500;
+    font-size:13px;
 }
 
 .skill-item-info-box {
@@ -337,11 +380,46 @@
     align-items: center;
 
 }
+.main-contact-box .form-control{
+    background:transparent;
+    border:none;
+    border-bottom:2px solid #fff;
+    color:#fff;
+    transition:0.3s ease-in-out;
+}
+.main-contact-box .form-control + label{
+    color:#fff;
+    font-weight:500;
+}
+.main-contact-box .form-control:focus{
+    background:#fff;
+    border-radius:5px !important;
+    border-color:#ccc;
+    color: #333;
+}
+.form-floating>.form-control:focus:not(:placeholder-shown)~label{
+    color:#333;
+    top:0;
+}
+.form-floating>.form-control:not(:placeholder-shown)~label{
+    color:#fff;
+    top:-10px;
+}
+.form-floating>.form-control:not(:placeholder-shown)~label::after{
+    content: '';
+    display: none;
+}
 
 .progress-box {
     flex:0 0 70%;
 }
-
+.progress-box .progress{
+    height:25px;
+}
+.progress-box .progress > div{
+    height:25px;
+    line-height:25px;
+}
 .counter-box p {
     text-align: center;
     margin-bottom: 0;
@@ -352,3 +430,80 @@
 .counter-box {
     flex:0 0 15%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 240319 - 스크롤매직 참고 소스
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -.5px;
+  }
+  
+  .header {
+    padding: 80px 50px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+  }
+  .header h1 {
+    font-size: 65px;
+  }
+  .header p {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 160%;
+  }
+  
+  .container {
+    margin-top: 40px;
+    padding: 0 50px;
+  }
+  .container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing:-1px;
+  }
+  .container .h2_text {
+    margin-bottom: 10px;
+    padding-bottom: 80px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .container .icon-round {
+    width: 150px;
+    height: 150px;
+    margin: 120px 0;
+    color: #fff;
+    font-size: 22px;
+    line-height: 150px;
+    text-align: center;
+    background-color: #ccc6db;
+    border-radius: 100%;
+  }
+  
+  .trigger {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #6332F6;
+    background-color: #eee;
+  }*/

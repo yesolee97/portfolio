@@ -19,31 +19,184 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 
 
 <!-- 24.2.13 (화) main-skill Ui 수정, main-contact form code 추가 -->
-
 <!-- main start -->
     <div class="main-wrap">
         <!-- 메인 스크롤 박스 start -->
-        <div class="main-scroll-box main-sec-box">
+        <!-- 3.25 기존 제작 코드-->
+        <!--div class="main-scroll-box main-sec-box" id="scroll">
 			<div class="scroll_box">↓ 스크롤 해주세요!</div>
 			<div class="txt_box">
-				<h6>안녕하세요!</h6>
-				<p>웹 퍼블리셔 이예솔입니다.</p>
+                <div class="txt_box_inner">
+                    <h6>안녕하세요!</h6>
+                    <p>웹 퍼블리셔 이예솔입니다.</p>
+                </div>
 			</div>
 			<div class="txt_box2">
-				<!-- <h6>웹 퍼블리셔 이예솔</h6> -->
+
 				<h6>저는,</h6>
 				<p>
-					4년차 웹 퍼블리셔입니다.123123<br>
+					4년차 웹 퍼블리셔입니다.<br>
 					퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
 					끊임없는 성장과 발전을 추구합니다.
 				</p>
 				<a href="#"><span>제가 궁금하신가요?</span></a>
 			</div>
+			<script>
+				// Initialize ScrollMagic controller
+				var controller = new ScrollMagic.Controller();
+
+				// Create a TweenMax animation
+				var tween = TweenMax.to("#scroll .txt_box h6", 1, {
+                    scale: 1.1,
+                    ease: Power1.easeInOut
+                });
+
+                // Create a ScrollMagic scene
+                var scene = new ScrollMagic.Scene({
+                    triggerElement: "scroll .txt_box",
+                    reverse: true,  // Change to true if you want the animation to reverse on scroll up
+                    triggerHook: 0.9 // 스크롤 위치가 컨테이너의 중간에 도달했을 때 트리거
+                })
+                .setTween(tween)
+                .addTo(controller);
+			</script>
+        </div-->
+
+        <!-- 3.25 월 추가 제작한 코드 ( 콘솔 오류로 인해 head.sub.php cdn 스크립트 추가, 하단 스크립트 재조정) -->
+
+        <div class="main-scroll-box main-sec-box" id="scroll">
+            <div class="scroll_box">↓ 스크롤 해주세요!</div>
+            <div class="txt_box">
+                <div class="txt_box_inner">
+                    <h6>안녕하세요!</h6>
+                    <p>웹 퍼블리셔 이예솔입니다.</p>
+                </div>
+            </div>
+            <div class="txt_box2">
+                <!-- <h6>웹 퍼블리셔 이예솔</h6> -->
+                <h6>저는,</h6>
+                <p>
+                    4년차 웹 퍼블리셔입니다.<br>
+                    퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
+                    끊임없는 성장과 발전을 추구합니다.
+                </p>
+                <a href="#"><span>제가 궁금하신가요?</span></a>
+            </div>
+
+
+            <div class="txt_box3">
+                <!-- <h6>웹 퍼블리셔 이예솔</h6> -->
+                <h6>저는,</h6>
+                <p>
+                    4년차 웹 퍼블리셔입니다.<br>
+                    퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
+                    끊임없는 성장과 발전을 추구합니다.
+                </p>
+                <a href="#"><span>제가 궁금하신가요?</span></a>
+            </div>
+
+
+            <div class="txt_box4">
+                <!-- <h6>웹 퍼블리셔 이예솔</h6> -->
+                <h6>저는,</h6>
+                <p>
+                    4년차 웹 퍼블리셔입니다.<br>
+                    퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
+                    끊임없는 성장과 발전을 추구합니다.
+                </p>
+                <a href="#"><span>제가 궁금하신가요?</span></a>
+            </div>
+
+
+
+
+
+            <div id="trigger">Trigger!!!</div>
+
         </div>
+
+        <script>
+            var controller = new ScrollMagic.Controller();
+
+
+            var tween1 = gsap.from(".txt_box", {
+                duration: 1.5,
+                rotationY: 180,
+                scale: 0.7,
+                autoAlpha: 0,
+                ease: "power1.inOut"
+            });
+
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box",
+                triggerHook: 0.5,
+            })
+                .setTween(tween1)
+                .addTo(controller)
+                .addIndicators({name: "1 - txt_box"});
+
+
+            var tween2 = gsap.from(".txt_box2", {
+                duration: 1,
+                scale: 0.5,
+                autoAlpha: 0,
+                ease: "back.out(1.7)"
+            });
+
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box2",
+                triggerHook: 0.5,
+            })
+                .setTween(tween2)
+                .addTo(controller)
+                .addIndicators({name: "2 - txt_box2"});
+
+
+
+            var tween3 = gsap.from(".txt_box3", {
+                duration: 1.5,
+                scale: 0.5,
+                autoAlpha: 0,
+                ease: "power1.inOut"
+            });
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box3",
+                triggerHook: 0.8,
+            })
+                .setTween(tween3)
+                .addTo(controller)
+                .addIndicators({name: "3 - txt_box3"});
+
+
+            var tween4 = gsap.from(".txt_box4", {
+                duration: 1.5,
+                x: "-100%",
+                autoAlpha: 0,
+                ease: "elastic.out(1, 0.3)"
+            });
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box4",
+                triggerHook: 0.4,
+            })
+                .setTween(tween4)
+                .addTo(controller)
+                .addIndicators({name: "4 - txt_box4"});
+
+
+
+
+        </script>
+
+
+
         <!-- 메인 스크롤 박스 end -->
 
         <!-- 메인 자기소개 start -->
-        <div class="main-about-box main-sec-box">
+        <div class="main-about-box main-sec-box" id="about">
             <div class="content-wrap">
                 <div class="container-fluid">
                     <div class="main_common_tit">
@@ -78,19 +231,19 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
         <!-- 메인 자기소개 end -->
 
         <!-- 메인 스킬 start -->
-        <div class="main-skill-box main-sec-box">
+        <div class="main-skill-box main-sec-box" id="skill">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3>Skill</h3>
 				</div>
 				<div class="skill-content">
 					<div class="skill-box">
-						<h6 class="skil-box-tilte">FrontEnd</h6><!-- 이부분 레이아웃 다른 거 참고해서 바꿔야할 듯! 난 풀스텍이 아니니까 ! -->
+						<h6 class="skil-box-tilte">FrontEnd</h6>
 						<div>
 							<div class="skill-box-top row gy-5">
 								<div class="skill-item col-md-12"><!-- html -->
                                     <!-- 03.08 html progress bar start  -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/html_logo.png" alt="html">
                                         </div>
@@ -106,7 +259,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                                     <!-- 03.08 html progress bar end  -->
 								</div>
 								<div class="skill-item col-md-12"><!-- css -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/css_logo.png" alt="css"> 
                                         </div>
@@ -121,7 +274,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- js -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
                                             <img src="<?php echo G5_THEME_IMG_URL ?>/js_logo.png" alt="js"> 
                                         </div>
@@ -136,7 +289,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- jquery -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
 											<img src="<?php echo G5_THEME_IMG_URL ?>/jquery_logo.png" alt="jquery">
                                         </div>
@@ -151,7 +304,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- bootstrap -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
 											<img src="<?php echo G5_THEME_IMG_URL ?>/bootstrap_logo.svg" alt="bootstrap">
                                         </div>
@@ -166,7 +319,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</div>
 								</div>
 								<div class="skill-item col-md-12"><!-- 리액트 -->
-                                    <div class="skill-item-info-box">
+                                    <div class="skill-item-info-box justify-content-between">
                                         <div class="logo-box">
 											<img src="<?php echo G5_THEME_IMG_URL ?>/React-icon.svg.png" alt="React">
                                         </div>
@@ -254,12 +407,10 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
             });
 
         </script>
-
-
         <!-- 메인 스킬 end -->
 
         <!-- 메인 아카이브 start -->
-        <div class="main-archiving-box main-sec-box">
+        <div class="main-archiving-box main-sec-box" id="archiving">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3 class="txt_wt">Archiving</h3>
@@ -269,7 +420,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="archiving-box col-md-6 col-12">
                         <div class="git-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/github.png" alt="깃허브 로고">
-                            <a href="#none" class="archiving-link">github.com/yesolee97</a>
+                            <a href="https://github.com/yesolee97" class="archiving-link" target="_blank">github.com/yesolee97</a>
                             <p><strong>소스 코드 저장소</strong>입니다.</p>
                             <ul>
                                 <li>프론트엔드 공부를 시작하며 23년 8월 github 첫 설치 및 사용법을 배웠습니다.</li>
@@ -282,7 +433,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 					<div class="archiving-box col-md-6 col-12">
                         <div class="notion-box">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/velog_logo.svg" alt="벨로그 로고">
-                            <a href="#none" class="archiving-link">velog.io/@dpthf9596</a>
+                            <a href="https://velog.io/@dpthf9596" class="archiving-link" target="_blank">velog.io/@dpthf9596</a>
                             <p><strong>개인 공부 및 기록</strong>을 위한 블로그 입니다.</p>
                             <ul>
                                 <li>업무에서 사용한 코드의 어려웠던 부분을 해석, 기록해두었습니다.</li>
@@ -309,7 +460,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
         <!-- 메인 아카이브 end -->
 
         <!-- 메인 프로젝트 start -->
-        <div class="main-project-box main-sec-box">
+        <div class="main-project-box main-sec-box" id="project">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3 class="txt_wt">Project</h3>
@@ -361,7 +512,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 									</p>
 									<p>
 										이 프로젝트는 <strong>사내 2명의 퍼블리셔와 1명의 외부 퍼블리셔가 약 12개월과 3개월 동안 함께 참여</strong>하였습니다.<br>
-										이 기간 동안 프로그래머와 협업하며 <strong>반복 작업을 최소화하고 효율적인 작업 방식을 </strong> 되었습니다.<br>
+										이 기간 동안 프로그래머와 협업하며 <strong>반복 작업을 최소화하고 효율적인 작업 방식을 모색</strong>하게 되었습니다.<br>
 										그 결과, 유틸리티 클래스 방식으로 개발을 진행하게 되었고, <strong>코드의 재사용성과 유지보수성을 높이는데 초점</strong>을 맞추었습니다.
 									</p>
 									<p>
@@ -732,7 +883,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 
 
         <!-- 메인 커리어 start -->
-        <div class="main-career-box main-sec-box">
+        <div class="main-career-box main-sec-box" id="career">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3>Career</h3>
@@ -748,10 +899,16 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 								<span class="career-item-date">2018.12.28 -</span>
 								<div class="career-item-txt-box">
 									<p>
-										예스웹 기업 설명글이 들어갑니다.
+										저는 예스웹에서 4년간 다양한 홈페이지를 제작하는 업무를 수행했습니다.<br>
+										프로젝트를 수행하면서 새로운 기술과 도구를 익히고, 문제 해결능력을 향상시켰습니다.
 									</p>
 									<p>
-										두줄이 될 진 모르겠지만 아무튼 예스웹 기업 설명글이 들어갑니다.
+										특히, 고객 요구사항을 이해하고 이를 반영하는 웹사이트를 개발하는 능력이 향상되었습니다. <br>
+										또한, 팀원들과의 협업을 통해 프로젝트를 효율적으로 관리하고 완성도 높은 결과물을 제공하는 방법을 배웠습니다.
+									</p>
+									<p>
+										이러한 경험을 통해 저는 전문성을 향상시키고 끊임없는 성장을 이루었습니다. <br>
+										앞으로도 열정과 노력으로 새로운 기술을 습득하고, 발전하는 인재가 되어 회사의 성과에 기여하고자 합니다.
 									</p>
 								</div>
 							</div>
@@ -763,13 +920,13 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
         <!-- 메인 커리어 end -->
 
         <!-- 메인 컨텍 start -->
-        <div class="main-contect-box main-sec-box">
+        <div class="main-contact-box main-sec-box" id="contact">
 			<div class="container-md">
 				<div class="main_common_tit">
 					<h3 class="txt_wt">Contact</h3>
 				</div>
                 <div class="content-body">
-                    <form id="contactForm" accept-charset="UTF-8" enctype="multipart/form-data" method="post" action="" >
+                    <form id="contactForm" accept-charset="UTF-8" enctype="multipart/form-data" method="post" action="./save_request.php" >
                         <input type="hidden" name="cotact_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
                         <div class="row gy-4">
                             <div class="col-xl-6 col-12">
