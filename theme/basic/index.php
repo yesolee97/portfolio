@@ -21,6 +21,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 <!-- 24.2.13 (화) main-skill Ui 수정, main-contact form code 추가 -->
 <!-- main start -->
     <div class="main-wrap">
+<<<<<<< HEAD
         <!-- 메인 스크롤 박스 start -->
         <!-- 3.25 기존 제작 코드-->
         <!--div class="main-scroll-box main-sec-box" id="scroll">
@@ -64,6 +65,9 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 
         <!-- 3.25 월 추가 제작한 코드 ( 콘솔 오류로 인해 head.sub.php cdn 스크립트 추가, 하단 스크립트 재조정) -->
 
+=======
+        <!-- 3.25 월 추가 제작한 코드 ( 콘솔 오류로 인해 head.sub.php cdn 스크립트 추가, 하단 스크립트 재조정) -->
+>>>>>>> 5d21756b76aa6c169f56f0ef39616d77c16ab00c
         <div class="main-scroll-box main-sec-box" id="scroll">
             <div class="scroll_box">↓ 스크롤 해주세요!</div>
             <div class="txt_box">
@@ -82,6 +86,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                 </p>
                 <a href="#"><span>제가 궁금하신가요?</span></a>
             </div>
+<<<<<<< HEAD
 
 
             <div class="txt_box3">
@@ -194,6 +199,41 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 
 
         <!-- 메인 스크롤 박스 end -->
+=======
+            <script>
+                var controller = new ScrollMagic.Controller();
+
+                // 첫 번째 텍스트 세트에 대한 애니메이션
+                var tween1 = gsap.fromTo("#scroll .txt_box_inner",
+                    {autoAlpha: 0},
+                    {autoAlpha: 1, duration: 1, ease: "power1.inOut"}
+                );
+
+                var scene1 = new ScrollMagic.Scene({
+                    triggerElement: "#scroll .txt_box",
+                    reverse: true,
+                    triggerHook: 0.9
+                })
+                    .setTween(tween1)
+                    .addTo(controller);
+
+                // 두 번째 텍스트 세트에 대한 애니메이션
+                var tween2 = gsap.fromTo("#scroll .txt_box2",
+                    {autoAlpha: 0, scale: 0.5}, // 시작할 때 투명하고 크기가 50%
+                    {autoAlpha: 1, scale: 1, duration: 1, ease: "back.out(1.7)"} // 종료할 때는 완전히 보이며 원래 크기로, 'back' 이징으로 튀어나오는 느낌
+                );
+
+                var scene2 = new ScrollMagic.Scene({
+                    triggerElement: "#scroll .txt_box2", // 트리거를 두 번째 텍스트 세트로 설정
+                    reverse: true,
+                    triggerHook: 0.9
+                })
+                    .setTween(tween2)
+                    .addTo(controller);
+            </script>
+
+        </div>
+>>>>>>> 5d21756b76aa6c169f56f0ef39616d77c16ab00c
 
         <!-- 메인 자기소개 start -->
         <div class="main-about-box main-sec-box" id="about">
