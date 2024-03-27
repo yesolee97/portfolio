@@ -21,7 +21,49 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
 <!-- 24.2.13 (화) main-skill Ui 수정, main-contact form code 추가 -->
 <!-- main start -->
     <div class="main-wrap">
+        <!-- 메인 스크롤 박스 start -->
+        <!-- 3.25 기존 제작 코드-->
+        <!--div class="main-scroll-box main-sec-box" id="scroll">
+			<div class="scroll_box">↓ 스크롤 해주세요!</div>
+			<div class="txt_box">
+                <div class="txt_box_inner">
+                    <h6>안녕하세요!</h6>
+                    <p>웹 퍼블리셔 이예솔입니다.</p>
+                </div>
+			</div>
+			<div class="txt_box2">
+
+				<h6>저는,</h6>
+				<p>
+					4년차 웹 퍼블리셔입니다.<br>
+					퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
+					끊임없는 성장과 발전을 추구합니다.
+				</p>
+				<a href="#"><span>제가 궁금하신가요?</span></a>
+			</div>
+			<script>
+				// Initialize ScrollMagic controller
+				var controller = new ScrollMagic.Controller();
+
+				// Create a TweenMax animation
+				var tween = TweenMax.to("#scroll .txt_box h6", 1, {
+                    scale: 1.1,
+                    ease: Power1.easeInOut
+                });
+
+                // Create a ScrollMagic scene
+                var scene = new ScrollMagic.Scene({
+                    triggerElement: "scroll .txt_box",
+                    reverse: true,  // Change to true if you want the animation to reverse on scroll up
+                    triggerHook: 0.9 // 스크롤 위치가 컨테이너의 중간에 도달했을 때 트리거
+                })
+                .setTween(tween)
+                .addTo(controller);
+			</script>
+        </div-->
+
         <!-- 3.25 월 추가 제작한 코드 ( 콘솔 오류로 인해 head.sub.php cdn 스크립트 추가, 하단 스크립트 재조정) -->
+
         <div class="main-scroll-box main-sec-box" id="scroll">
             <div class="scroll_box">↓ 스크롤 해주세요!</div>
             <div class="txt_box">
@@ -40,39 +82,118 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                 </p>
                 <a href="#"><span>제가 궁금하신가요?</span></a>
             </div>
-            <script>
-                var controller = new ScrollMagic.Controller();
 
-                // 첫 번째 텍스트 세트에 대한 애니메이션
-                var tween1 = gsap.fromTo("#scroll .txt_box_inner",
-                    {autoAlpha: 0},
-                    {autoAlpha: 1, duration: 1, ease: "power1.inOut"}
-                );
 
-                var scene1 = new ScrollMagic.Scene({
-                    triggerElement: "#scroll .txt_box",
-                    reverse: true,
-                    triggerHook: 0.9
-                })
-                    .setTween(tween1)
-                    .addTo(controller);
+            <div class="txt_box3">
+                <!-- <h6>웹 퍼블리셔 이예솔</h6> -->
+                <h6>저는,</h6>
+                <p>
+                    4년차 웹 퍼블리셔입니다.<br>
+                    퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
+                    끊임없는 성장과 발전을 추구합니다.
+                </p>
+                <a href="#"><span>제가 궁금하신가요?</span></a>
+            </div>
 
-                // 두 번째 텍스트 세트에 대한 애니메이션
-                var tween2 = gsap.fromTo("#scroll .txt_box2",
-                    {autoAlpha: 0, scale: 0.5}, // 시작할 때 투명하고 크기가 50%
-                    {autoAlpha: 1, scale: 1, duration: 1, ease: "back.out(1.7)"} // 종료할 때는 완전히 보이며 원래 크기로, 'back' 이징으로 튀어나오는 느낌
-                );
 
-                var scene2 = new ScrollMagic.Scene({
-                    triggerElement: "#scroll .txt_box2", // 트리거를 두 번째 텍스트 세트로 설정
-                    reverse: true,
-                    triggerHook: 0.9
-                })
-                    .setTween(tween2)
-                    .addTo(controller);
-            </script>
+            <div class="txt_box4">
+                <!-- <h6>웹 퍼블리셔 이예솔</h6> -->
+                <h6>저는,</h6>
+                <p>
+                    4년차 웹 퍼블리셔입니다.<br>
+                    퍼블리싱과 프론트엔드 분야에 관심이 있으며,<br>
+                    끊임없는 성장과 발전을 추구합니다.
+                </p>
+                <a href="#"><span>제가 궁금하신가요?</span></a>
+            </div>
+
+
+
+
+
+            <div id="trigger">Trigger!!!</div>
 
         </div>
+
+        <script>
+            var controller = new ScrollMagic.Controller();
+
+
+            var tween1 = gsap.from(".txt_box", {
+                duration: 1.5,
+                rotationY: 180,
+                scale: 0.7,
+                autoAlpha: 0,
+                ease: "power1.inOut"
+            });
+
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box",
+                triggerHook: 0.5,
+            })
+                .setTween(tween1)
+                .addTo(controller)
+                .addIndicators({name: "1 - txt_box"});
+
+
+            var tween2 = gsap.from(".txt_box2", {
+                duration: 1,
+                scale: 0.5,
+                autoAlpha: 0,
+                ease: "back.out(1.7)"
+            });
+
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box2",
+                triggerHook: 0.5,
+            })
+                .setTween(tween2)
+                .addTo(controller)
+                .addIndicators({name: "2 - txt_box2"});
+
+
+
+            var tween3 = gsap.from(".txt_box3", {
+                duration: 1.5,
+                scale: 0.5,
+                autoAlpha: 0,
+                ease: "power1.inOut"
+            });
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box3",
+                triggerHook: 0.8,
+            })
+                .setTween(tween3)
+                .addTo(controller)
+                .addIndicators({name: "3 - txt_box3"});
+
+
+            var tween4 = gsap.from(".txt_box4", {
+                duration: 1.5,
+                x: "-100%",
+                autoAlpha: 0,
+                ease: "elastic.out(1, 0.3)"
+            });
+
+            new ScrollMagic.Scene({
+                triggerElement: ".txt_box4",
+                triggerHook: 0.4,
+            })
+                .setTween(tween4)
+                .addTo(controller)
+                .addIndicators({name: "4 - txt_box4"});
+
+
+
+
+        </script>
+
+
+
+        <!-- 메인 스크롤 박스 end -->
 
         <!-- 메인 자기소개 start -->
         <div class="main-about-box main-sec-box" id="about">
