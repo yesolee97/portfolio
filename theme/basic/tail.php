@@ -28,7 +28,7 @@ if(G5_COMMUNITY_USE === false) {
 
 <!-- footer start -->
 
-<footer>
+<footer id="footer">
     <div class="container">
         footer
     </div>

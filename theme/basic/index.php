@@ -106,13 +106,6 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                 </p>
                 <a href="#"><span>제가 궁금하신가요?</span></a>
             </div>
-
-
-
-
-
-            <div id="trigger">Trigger!!!</div>
-
         </div>
 
         <script>
@@ -185,10 +178,6 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_THEME_CSS_URL . '/page/main.
                 .setTween(tween4)
                 .addTo(controller)
                 .addIndicators({name: "4 - txt_box4"});
-
-
-
-
         </script>
 
 
